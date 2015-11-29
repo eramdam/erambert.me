@@ -92,3 +92,7 @@ p {
 .content-with-things li {
   line-height: 1.9;
 }
+
+.ｂａｄｔｉｍｅ p {
+  color: rgba(0,0,0, .1);
+}
