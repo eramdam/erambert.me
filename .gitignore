@@ -2,3 +2,4 @@ node_modules
 dist
 web/files
 web/tmp
+web/_h5ai
