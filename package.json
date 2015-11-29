@@ -1,0 +1,42 @@
+{
+  "name": "erambert.me15",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.8.2",
+    "cssrecipes-defaults": "^0.5.0",
+    "del": "^1.2.1",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^1.1.0",
+    "gulp-cssnext": "^1.0.1",
+    "gulp-ejs": "^1.1.1",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^1.2.0",
+    "gulp-util": "^3.0.6",
+    "postcss-extend": "^0.4.3",
+    "postcss-mixins": "^0.4.0",
+    "postcss-nested": "^0.3.2",
+    "postcss-pseudo-class-any-link": "^0.3.0",
+    "postcss-pxtorem": "^2.3.2",
+    "run-sequence": "^1.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eramdam/eramdam.me.git"
+  },
+  "author": "Damien Erambert <damien.erambert@me.com> (http://github.com/eramdam)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eramdam/eramdam.me/issues"
+  },
+  "homepage": "https://github.com/eramdam/eramdam.me#readme"
+}
