@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'PT Sans', 'Helvetica', 'Helvetica Neue', 'Segoe UI', sans-serif;
+  background: #f7f7f9;
+  color: #44474b;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+a, a:visited {
+  color: #b8233e;
+  text-decoration: none;
+}
+a:hover, a:active {
+  color: #8b1129;
+}
+
+.header-of-things a,
+.header-of-things a:visited,
+.header-of-things a:hover,
+.header-of-things a:active {
+  color: inherit;
+  font-style: italic;
+  position: relative;
+  text-shadow: 0 2px 0 rgba(0,0,0,.3);
+  z-index: 1;
+}
+
+.header-of-things a:after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  box-shadow: 0 1px 0 rgba(0,0,0,.3);
+}
+
+.hello {
+  font-size: 2rem;
+}
+
+p {
+  line-height: 1.7;
+  margin: 1em 0;
+}
+
+.header-of-things,
+.content-with-things,
+.pacifist-ending {
+  padding: 1.25rem 2.4rem;
+  width: 100%;
+}
+
+.header-of-things {
+  background: #e5e5e5;
+  background: #b8233e;
+}
+
+.header-of-things .desc {
+  font-size: 1.1rem;
+}
+
+.header-of-things .hello,
+.header-of-things .desc {
+  color: #f7f7f9;
+}
+
+.content-with-things p {
+  color: #17181a;
+}
+
+.wrapper-of-things {
+  max-width: 660px;
+  margin: 1em auto;
+}
+
+.content-with-things ul,
+.content-with-things ol {
+  margin: 1em 0;
+  padding-left: 1.6rem;
+}
+
+.content-with-things li {
+  line-height: 1.9;
+}
