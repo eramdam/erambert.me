@@ -1,23 +1,22 @@
 {
-  "name": "erambert.me15",
+  "name": "erambert.me",
   "version": "1.0.0",
-  "description": "",
-  "dependencies": {
-    "browser-sync": "^2.10.0"
-  },
-  "devDependencies": {},
+  "description": "Damien Erambert's personal website",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "browser-sync start --server 'web' --files 'web'"
+    "start": "live-server web/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eramdam/eramdam.me.git"
+    "url": "git+https://github.com/eramdam/erambert.me.git"
   },
-  "author": "Damien Erambert <damien.erambert@me.com> (http://github.com/eramdam)",
-  "license": "ISC",
+  "author": "",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/eramdam/eramdam.me/issues"
+    "url": "https://github.com/eramdam/erambert.me/issues"
   },
-  "homepage": "https://github.com/eramdam/eramdam.me#readme"
+  "homepage": "https://github.com/eramdam/erambert.me#readme",
+  "dependencies": {
+    "live-server": "^1.2.0"
+  }
 }
