@@ -1,25 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Damien Erambert</title>
-  <link rel="stylesheet" href="./index.css">
-</head>
-<body>
-  <div class="container">
-    <div class="portrait" role="img" aria-label="Portait of Damien Erambert, drawn by Matt Cummings"></div>
-    <span class="name with-mask-anim">Damien Erambert</span>
-    <span class="title with-mask-anim">Software Engineer</span>
-  </div>
-<script type="text/javascript">
-const wait = (time) => new Promise((resolve) => setTimeout(resolve, time));
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Damien Erambert</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
+      integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="light-mode">
+    <script>
+      function setBgColor() {
+        const d = new Date();
+        const h = (d.getSeconds() + d.getMinutes()) % 360;
+        document.body.style.setProperty('--bg-color', `hsl(${h}, 68%, 43%)`);
+      }
 
-wait(100).then(() => {
-  console.log('yo')
- Array.from(document.querySelectorAll('.with-mask-anim')).forEach(el => el.classList.add('show'))
-})
-</script>
-</body>
+      setBgColor();
+
+      setInterval(setBgColor, 10000);
+    </script>
+    <div class="header with-shadow">
+      <div
+        class="portrait with-fade-in"
+        role="img"
+        aria-label="Portait of Damien Erambert, drawn by Matt Cummings"
+      ></div>
+      <div class="text">
+        <span class="name with-fade-in">Damien Erambert</span>
+        <span class="title with-fade-in">Software Engineer</span>
+      </div>
+    </div>
+    <div class="content">
+      <h2>About me</h2>
+
+      <p>
+        I currently work at <a href="https://frontapp.com" title="Front">Front</a> as a software
+        engineer where I'm helping shape the future of work (email). <br />
+        The essential thing you may want to know about me is that I was born and raised in
+        <strike>Cheeseland</strike> France 🇫🇷
+      </p>
+      <p>
+        Some of my active and recent projects include:
+      </p>
+      <ul>
+        <li>
+          <a href="https://better.tw">Better TweetDeck</a>, a WebExtension that adds a ton of
+          features to TweetDeck
+        </li>
+        <li>
+          <a href="https://github.com/eramdam/WallbaseDirectDownloader">WallHaven Direct Download</a
+          >, a WebExtension to improve WallHaven.
+        </li>
+        <li>Cover art designs for <a href="https://leoninc.fr/audio/">Leon Inc.</a></li>
+        <li><em>🛠 Insert project here 🚧</em></li>
+      </ul>
+      <p>
+        Prior to that, I used to work as a freelance Web and UI designer. Unfortunately, this was a
+        long time ago, so most of the works vanished. <br />
+        But if you used <a href="https://videolan.org/vlc">VLC Media Player</a> on an Apple device
+        you may have
+        <a href="https://dribbble.com/shots/1693609-VLC-on-Yosemite-bottom-bar">seen</a>
+        <a href="https://dribbble.com/shots/1376173-VLC-for-iOS7">my</a>
+        <a href="https://dribbble.com/shots/1734291-VLC-on-Yosemite-dark-mode-and-sidebar-icons"
+          >UI work</a
+        >.
+      </p>
+      <p>
+        That's pretty much it! You can find me through:
+      </p>
+      <div class="social-links with-fade-in-children">
+        <a href="mail:damien@erambert.me" class="social-block">
+          <i class="fa fa-at" aria-hidden="true"></i>
+          Email
+        </a>
+        <a href="https://github.com/Eramdam" class="social-block">
+          <i class="fa fa-github-alt" aria-hidden="true"></i>
+          GitHub
+        </a>
+        <a href="https://twitter.com/@eramdam" class="social-block">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+          Twitter
+        </a>
+        <a href="https://octodon.social/@eramdam" class="social-block">
+          <i class="fa fa-mastodon" aria-hidden="true"></i>
+          Mastodon
+        </a>
+        <a href="https://dribbble.com/Eramdam" class="social-block">
+          <i class="fa fa-dribbble" aria-hidden="true"></i>
+          Dribbble
+        </a>
+        <a href="https://instagram/eramdam" class="social-block">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+          Instagram
+        </a>
+        <a href="http://www.lastfm.fr/user/DErambert" class="social-block">
+          <i class="fa fa-lastfm" aria-hidden="true"></i>
+          LastFM
+        </a>
+      </div>
+    </div>
+    <script type="text/javascript">
+      const wait = time => new Promise(resolve => setTimeout(resolve, time));
+      const modeClass =
+        window.matchMedia && window.matchMedia(`(prefers-color-scheme: dark)`).matches
+          ? 'dark-mode'
+          : 'light-mode';
+      document.querySelector('html').className = modeClass;
+
+      const nodesToAnimate = Array.from(document.querySelectorAll('.with-fade-in'));
+
+      nodesToAnimate.forEach((el, i) => {
+        el.style.transitionDelay = `${(i + 1) * 200}ms`;
+      });
+
+      wait(300).then(() => {
+        nodesToAnimate.forEach(el => el.classList.add('show'));
+      });
+    </script>
+  </body>
 </html>
