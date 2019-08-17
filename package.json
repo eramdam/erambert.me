@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/eramdam/erambert.me#readme",
   "dependencies": {
-    "live-server": "^1.2.0"
+    "live-server": "^1.2.1",
+    "prettier": "^1.18.2"
   }
 }
