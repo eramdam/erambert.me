@@ -13,18 +13,8 @@
       crossorigin="anonymous"
     />
   </head>
-  <body class="light-mode">
-    <script>
-      function setBgColor() {
-        const d = new Date();
-        const h = (d.getSeconds() + d.getMinutes()) % 360;
-        document.body.style.setProperty('--bg-color', `hsl(${h}, 68%, 43%)`);
-      }
-
-      setBgColor();
-
-      setInterval(setBgColor, 10000);
-    </script>
+  <body class="noscript">
+    <script src="./index.js"></script>
     <div class="header with-shadow">
       <div
         class="portrait with-fade-in"
@@ -105,23 +95,5 @@
         </a>
       </div>
     </div>
-    <script type="text/javascript">
-      const wait = time => new Promise(resolve => setTimeout(resolve, time));
-      const modeClass =
-        window.matchMedia && window.matchMedia(`(prefers-color-scheme: dark)`).matches
-          ? 'dark-mode'
-          : 'light-mode';
-      document.querySelector('html').className = modeClass;
-
-      const nodesToAnimate = Array.from(document.querySelectorAll('.with-fade-in'));
-
-      nodesToAnimate.forEach((el, i) => {
-        el.style.transitionDelay = `${(i + 1) * 200}ms`;
-      });
-
-      wait(300).then(() => {
-        nodesToAnimate.forEach(el => el.classList.add('show'));
-      });
-    </script>
   </body>
 </html>

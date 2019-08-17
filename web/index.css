@@ -29,7 +29,8 @@ html {
   color: white;
 }
 
-.light-mode .header {
+.header,
+.noscript .header {
   background-color: var(--bg-color);
 }
 
@@ -129,7 +130,7 @@ strike {
 
 /* Noscript things */
 
-.with-fade-in {
+body:not(.noscript) .with-fade-in {
   transition-property: transform, opacity;
   transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
   transition-duration: 400ms;
@@ -137,7 +138,7 @@ strike {
   transform: translateY(20px)
 }
 
-.with-fade-in.show {
+body:not(.noscript) .with-fade-in.show {
   opacity: 1;
   transform: translateY(0);
 }
@@ -175,35 +176,61 @@ strike {
 }
 
 
-.dark-mode .content,
-.dark-mode body,
-html.dark-mode,
-.dark-mode .header {
-  background-color: #2a2c2f;
-}
+@media (prefers-color-scheme: dark) {
 
-.dark-mode .header {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2));
-}
+  .content,
+  body,
+  html,
+  .header {
+    background-color: #2a2c2f;
+  }
 
-.dark-mode .content,
-.dark-mode body {
-  color: white;
-}
+  .noscript .header,
+  .header {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2));
+    background-color: #2a2c2f;
+  }
 
-.dark-mode .with-shadow {
-  text-shadow: none;
-}
+  .content,
+  body {
+    color: white;
+  }
 
-.dark-mode .header .name {
-  color: var(--bg-color);
-}
+  .with-shadow {
+    text-shadow: none;
+  }
 
-.dark-mode .social-block {
-  background: rgba(0, 0, 0, .7)
-}
+  .header .name {
+    color: var(--bg-color);
+  }
 
-.dark-mode .social-block:hover {
-  color: rgba(0, 0, 0, .7);
-  background: var(--bg-color);
+  .social-block {
+    background: rgba(0, 0, 0, .7)
+  }
+
+  .social-block:hover {
+    color: rgba(0, 0, 0, .7);
+    background: var(--bg-color);
+  }
+
+  html {
+    overflow-y: auto;
+    scrollbar-color: #101011 transparent;
+    scrollbar-width: thin;
+  }
+
+  html::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: transparent;
+  }
+
+  html::-webkit-scrollbar {
+    background-color: transparent;
+    width: 8px;
+  }
+
+  html::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    width: 8px;
+  }
 }
