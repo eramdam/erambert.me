@@ -45,7 +45,7 @@ html {
   display: inline-block;
   border-radius: 50%;
   margin: 30px;
-  background-image: url(/img/portrait.png);
+  background-image: url(/img/portrait.jpg);
   background-size: cover;
   box-shadow: inset 0 0 5px 1px rgba(255, 255, 255, .3), 0 0 2px 1px rgba(0, 0, 0, .2), 0 6px 10px rgba(0, 0, 0, .3);
 }
