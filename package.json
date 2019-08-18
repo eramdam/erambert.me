@@ -4,7 +4,8 @@
   "description": "Damien Erambert's personal website",
   "main": "index.js",
   "scripts": {
-    "start": "live-server web/"
+    "start": "live-server web/",
+    "build": "cp -R node_modules/fork-awesome web/fork-awesome"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/eramdam/erambert.me#readme",
   "dependencies": {
+    "fork-awesome": "^1.1.7",
     "live-server": "^1.2.1",
     "prettier": "^1.18.2"
   }
