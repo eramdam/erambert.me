@@ -1,0 +1,82 @@
+==================================================================
+https://keybase.io/eramdam
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://erambert.me
+  * I am eramdam (https://keybase.io/eramdam) on keybase.
+  * I have a public key with fingerprint D428 64DC E1DA 8CA1 CA5D  91C8 BDE8 E9B2 FF55 71BB
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101f5a8b675da959565c621918afd653e51a1ab7a3ef82878b7984dcfec68de0ec90a",
+      "fingerprint": "d42864dce1da8ca1ca5d91c8bde8e9b2ff5571bb",
+      "host": "keybase.io",
+      "key_id": "bde8e9b2ff5571bb",
+      "kid": "0101f5a8b675da959565c621918afd653e51a1ab7a3ef82878b7984dcfec68de0ec90a",
+      "uid": "c0688f2319843e402bf8bd09b03bde00",
+      "username": "eramdam"
+    },
+    "merkle_root": {
+      "ctime": 1566293363,
+      "hash_meta": "38d3d744530454a2e9a4b792856223316e016cf601557c0bb718e383f4e57999",
+      "seqno": 6055184
+    },
+    "revoke": {
+      "sig_ids": [
+        "678f2ca533d4e1a71e3a9d7b6aefc5be265445a1dd6d3dd44d69cb0d7f975b2f0f"
+      ]
+    },
+    "service": {
+      "hostname": "erambert.me",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1566293370,
+  "expire_in": 157680000,
+  "prev": "d13341e4de6f216f1a74bca4a5986e22f5332fdf5c09159d4eb9fd3c51cb9c2a",
+  "seqno": 37,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.3
+Comment: https://keybase.io/crypto
+
+yMK0AnicrZNdaB1FGIZPfhrSSEOxBZMLW1lBaYhlZmdnduYIehFLTRUREf/ScJif
+b07WnHP2dHeTGuMpQaVU0UYjxEhRCmJoNVRIizelxdbiTfSiKNJ6UTSGINIEaixU
+UXQ2KIp46d4sM/t+3/e8785c2NRS6Gh66EyJzcxefL1p4Xw2UhgcOPPsuKdiM+YV
+x71hWH9BxUCalYYj4xU9hBG2VHLFQmqkoIIyqpmPBebSGkYJUCyxVKEkYLnPQ65C
+wQOjLWjGDSDQAkmv17NRrQxJPYlqmWtrAp8zpwJsJNcSa0mNwJorAxyE8q2lNMRK
+ucKhOM0rHJySKeyMYrfnFqV1vP/Q/8/cI+vtNGKcW59gpyEQIF9Zx4qEQsQhIJQL
+U0hqsgpODYmsGln1Gr1eFZLhCpSSOM7ybHUW5QpMGfMFIYw4fzIdKlUhk66QcENM
+GASUoIAG0gchA8flc8p8nxDMAGGmLUPY2dVIqRBzIJzYAGgohHAYKeyrxV6RIUox
+DxxBAqPxMOTD06jsUku94oDHQufGhU6ICQDLEAORwoSKSbCaKvAZdRQSG8MckQkC
+w4RWyIRWhNTFjaw32MiHJaORXm+e/6Z/2FeQZDvdqterJ3EW67jiPgxlWT0t5rFk
+Y/VcuR9U6c8eJRXVjDsjrmIUkjSKay4mp/xXYiHq9eCZepRAKcoVNGQcuSefA6P5
+ycKEBBgCA8z6mFlnLlBaBpIKzsD3rfPsW2OpRgJT4ewrYQ3RFGsltC//jpCEjlOW
+XU8XXE1mIwl4jfMf720tNHUU2jY055en0LFx819Xqnq1vTD/7YL3fGHH6syBxtSl
+xm8904tPl9+eHHjv4PFbpq5tW5m/0L352PLWlZ61E/Mn7thA932Tdv34ymfXWvAv
+D9z6gvzq9i2H1o5WPxmO+g/2Lu7qHKw+eOm751aKfT8ce6mn/53mc2enppfOtj6+
+a1vnYsvcxOmHbxzY/XVbub27D8+2XV87cvGNvk1b3rp/FZY+XWz5sqOpfXJH62F/
+9uc7X11Yab6iP5p47balJ3//tXLTbt01d/Rca9ebXyjefPO7l/unt8P3eD/tfLT7
+p1X/cqPy4vJ9W9s7rpc/9Cb2bH/C8qdOH56cRlfumtrDT91Yfezuz089snFsZnxo
++Ujz/D2HXr63fe6Dydb3r578A9GyfuM=
+=Qlwe
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/eramdam
+
+==================================================================
+
