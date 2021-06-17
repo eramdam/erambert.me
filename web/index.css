@@ -2,10 +2,10 @@
   --bg-color: #b8233e;
 }
 
-
 body,
 html {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   height: 100%;
   width: 100%;
   margin: 0;
@@ -47,7 +47,8 @@ html {
   margin: 30px;
   background-image: url(/img/portrait.jpg);
   background-size: cover;
-  box-shadow: inset 0 0 5px 1px rgba(255, 255, 255, .3), 0 0 2px 1px rgba(0, 0, 0, .2), 0 6px 10px rgba(0, 0, 0, .3);
+  box-shadow: inset 0 0 5px 1px rgba(255, 255, 255, 0.3), 0 0 2px 1px rgba(0, 0, 0, 0.2),
+    0 6px 10px rgba(0, 0, 0, 0.3);
 }
 
 .name {
@@ -59,17 +60,16 @@ html {
   transition-delay: 0s;
 }
 
-
 .title {
   line-height: 1.4;
   font-weight: 400;
   font-size: 1rem;
-  transition-duration: .75s;
-  transition-delay: .5s;
+  transition-duration: 0.75s;
+  transition-delay: 0.5s;
 }
 
 .with-shadow {
-  text-shadow: 0 1px 1px rgba(0, 0, 0, .1), 0 2px 3px rgba(0, 0, 0, .3);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.3);
 }
 
 .content {
@@ -135,14 +135,13 @@ body:not(.noscript) .with-fade-in {
   transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
   transition-duration: 400ms;
   opacity: 0;
-  transform: translateY(20px)
+  transform: translateY(20px);
 }
 
 body:not(.noscript) .with-fade-in.show {
   opacity: 1;
   transform: translateY(0);
 }
-
 
 .header {
   transition: background-color 1s ease;
@@ -151,7 +150,6 @@ body:not(.noscript) .with-fade-in.show {
 .content a:any-link:not(.social-block) {
   transition: color 1s ease;
 }
-
 
 @media (max-width: 600px) {
   .social-links {
@@ -175,9 +173,7 @@ body:not(.noscript) .with-fade-in.show {
   }
 }
 
-
 @media (prefers-color-scheme: dark) {
-
   .content,
   body,
   html,
@@ -187,7 +183,7 @@ body:not(.noscript) .with-fade-in.show {
 
   .noscript .header,
   .header {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
     background-color: #2a2c2f;
   }
 
@@ -205,11 +201,11 @@ body:not(.noscript) .with-fade-in.show {
   }
 
   .social-block {
-    background: rgba(0, 0, 0, .7)
+    background: rgba(0, 0, 0, 0.7);
   }
 
   .social-block:hover {
-    color: rgba(0, 0, 0, .7);
+    color: rgba(0, 0, 0, 0.7);
     background: var(--bg-color);
   }
 

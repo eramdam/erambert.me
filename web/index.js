@@ -34,16 +34,38 @@ const darkPalette = [
   'hsl(106, 68%, 53%)'
 ];
 
-const palette =
-  window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)')
-    ? darkPalette
-    : lightPalette;
+function updateThemeColor(color) {
+  const existingColor = document.querySelector('meta[name="theme-color"]');
+
+  if (existingColor) {
+    existingColor.setAttribute('content', color);
+  } else {
+    const newColor = document.createElement('meta');
+    newColor.name = 'theme-color';
+    newColor.content = color;
+
+    document.head.appendChild(newColor);
+  }
+}
+
+const darkModeQuery = window.matchMedia('(prefers-color-scheme: dark)');
+const palette = darkModeQuery.matches ? darkPalette : lightPalette;
+
 const d = new Date();
 // Compute a semi-random hue
 const index = Math.round(d.getHours() + d.getMinutes() + Math.random() * 300) % palette.length;
+
+darkModeQuery.addEventListener('change', ev => {
+  const newPalette = ev.matches ? darkPalette : lightPalette;
+  const newColor = newPalette[index];
+  document.body.style.setProperty('--bg-color', newColor);
+  updateThemeColor(ev.matches ? '#2a2c2f' : newColor);
+});
 const color = palette[index];
+
 // Apply the "random" color
 document.body.style.setProperty('--bg-color', color);
+updateThemeColor(darkModeQuery.matches ? '#2a2c2f' : color);
 
 document.addEventListener('DOMContentLoaded', () => {
   // Small "sleep"-like function.

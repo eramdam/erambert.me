@@ -22,6 +22,6 @@
   },
   "devDependencies": {
     "live-server": "^1.2.1",
-    "prettier": "^1.18.2"
+    "prettier": "^2.3.1"
   }
 }
